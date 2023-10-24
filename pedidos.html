@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SaborArte</title>
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="logo.png">
+</head>
+
+<body>
+    <div id="menu">
+        <div class="logosozinha">
+            <a href="./index.html"><img id="logoImg" src="logo.png"></a>
+            <a href="./index.html">
+                <h1 id="tituloLogo">SaborArte</h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="listaMenu">
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form class="pedidosdelivery" action="fim.html">
+        <label for="nome">Nome </label>
+        <input type="text" id="nome" class="formpedido" placeholder="Nome" required><br>
+        <label for="telcliente">Telefone </label>
+        <input type="text" id="telcliente" class="formpedido" placeholder="Telefone" required><br>
+        <label for="endcliente">Endereço </label>
+        <input type="text" id="endcliente" class="formpedido" placeholder="Endereço" required><br>
+        <label for="endnumcliente">Número </label>
+        <input type="number" id="endnumcliente" class="formpedido" placeholder="Numero" required><br>
+
+        <input type="checkbox" id="exptex">
+        <label for="ceudebacon">Explosão Texana</label><br>
+        <input type="checkbox" id="ceudebacon">
+        <label for="ceudebacon">Céu de Bacon</label><br>
+        <input type="checkbox" id="picanha">
+        <label for="picanha">Picante Picanha</label><br>
+        <input type="checkbox" id="vegano">
+        <label for="vegano">Vegano Supremo</label><br>
+        <input type="checkbox" id="frango">
+        <label for="frango">Delícia de Frango Crocante</label><br>
+        <input type="checkbox" id="americano">
+        <label for="americano">Clássico Americano</label><br>
+        <input type="checkbox" id="zesty">
+        <label for="zesty">Zesty Southwest</label><br>
+        <input type="checkbox" id="medit">
+        <label for="medit">Sabor do Mediterrâneo</label><br>
+        <input type="checkbox" id="cheddar">
+        <label for="cheddar">Rebelde do Cheddar</label><br><br>
+
+        <textarea name="observacao" id="observacao" cols="35" rows="5">Observações</textarea>
+
+        <input class="finalped" type="submit" value="Fazer meu pedido">
+    </form>
+
+    <footer>
+        <div class="rodape">
+            <div class="fim">
+                <p id="frase">Na SaborArte, saboreie a excelência a cada mordida.</p>
+                <p id="endereco">Rua das Delícias, nº 123, Brasília, DF.</p>
+                <p id="contatoo">Entre em contato: (61) 1111-1111</p>
+            </div>
+            <p class="copy">Copyright © 2023 SaborArte. PÁGINA FICTÍCIA. Pablynne Caldeira</p>
+        </div>
+    </footer>
+</body>
+
+</html>

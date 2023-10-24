@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rajdhani:wght@300&family=Roboto+Slab:wght@100;400&family=Young+Serif&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+
+.logosozinha {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logoImg {
+    width: 50px;
+    float: left;
+}
+
+
+#tituloLogo {
+    float: left;
+    color: orange;
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.listaMenu {
+    position: relative;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.listaMenu li {
+    margin: 20px;
+}
+
+.listaMenu li a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.listaMenu li a:link,
+.listaMenu li a:visited {
+    color: white;
+}
+
+.listaMenu li a:hover {
+    color: #e50021;
+}
+
+
+#menuAtual:link,
+#menuAtual:visited {
+    font-weight: bold;
+}
+
+.acessos {
+    margin-left: 50px;
+}
+
+#txintro,
+#apresentacao,
+#txtcontato {
+    font-size: 23px;
+    text-align: justify;
+    color: aliceblue;
+    margin: 30px;
+}
+
+#imagintro {
+    width: 600px;
+    margin-left: 20px;
+}
+
+#imagsobre {
+    width: 600px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#apresentacao {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+#txtcontato {
+    margin-bottom: 0;
+}
+
+.contato {
+    padding-bottom: 30px;
+}
+
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    margin: 25px;
+    margin-left: 15%;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 3px 3px 12px #4b4a4a,
+        -4px -4px 12px #797777;
+}
+
+.btsobre {
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.btcont {
+    margin-top: 0;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #f31f1f 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btsobre::before {
+    background-image: linear-gradient(to right, #f8fc0f 0%, #fdb530 100%);
+}
+
+button:hover::before {
+    width: 9em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: orange;
+}
+
+#entrega {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    height: 100px;
+    width: 300px;
+}
+
+
+#entrega img {
+    border-radius: 50%;
+    border: 3px solid #e50021;
+}
+
+#tel {
+    position: absolute;
+    left: 120px;
+    height: 75px;
+    background-color: #e50021;
+    color: white;
+    margin-top: 13px;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 15px;
+}
+
+.icontel {
+    height: 90px;
+}
+
+#tel h4 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#tel h5 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+#tel a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape {
+    background-color: orange;
+    position: static;
+}
+
+.fim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+#frase {
+    margin-left: 10px;
+}
+
+#contatoo {
+    margin-right: 10px;
+}
+
+.copy {
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+/*Cardápio*/
+.hamburguer {
+    width: 100%;
+    text-align: center;
+}
+
+.nomeham {
+    color: #fdb530;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Young Serif', serif;
+}
+
+.deschamb {
+    color: aliceblue;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.preco {
+    color: #f8fc0f;
+    font-size: 20px;
+    text-decoration: overline;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.hamburguer img {
+    width: 350px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+/*Sobre nós*/
+#sobresaborarte {
+    width: 300px;
+    margin: 40px;
+}
+
+#txsobrenos {
+    color: aliceblue;
+    text-align: justify;
+    padding-right: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+#histsaborarte {
+    color: aliceblue;
+    text-align: justify;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 20px;
+    margin: 50px;
+    margin-right: 5%;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+}
+
+#vizinhoss {
+    height: 300px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+#frasehist {
+    color: azure;
+    background-color: orange;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+}
+
+/*Contato*/
+#txdelivery {
+    color: aliceblue;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+}
+
+.delivery img {
+    width: 500px;
+    padding-right: 30px;
+}
+
+.teldelivery {
+    margin-right: 50%;
+}
+
+.info {
+    font-size: 30px;
+    color: orange;
+}
+
+
+/* formpedido */
+.pedidodel,
+.finalped {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    max-width: 100%;
+}
+
+.pedidodel:hover,
+.pedidodel:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.pedidodel:hover {
+    transform: translateY(-1px);
+}
+
+.pedidodel:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.pedidosdelivery {
+    color: orange;
+    margin-left: 38%;
+    margin-right: 38%;
+    border: solid orange;
+    padding-left: 50px;
+    padding: 30px;
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    min-width: 200px;
+}
+
+.pedidosdelivery input {
+    border-radius: 8px;
+    height: 30px;
+    border-style: none;
+    align-items: center;
+}
+
+.formpedido {
+    margin-bottom: 8px;
+}
+
+.pedidodel {
+    margin-left: 50%;
+    margin-bottom: 30px;
+}
+
+.finalped {
+    margin-left: 20%;
+    margin-top: 15px;
+}
+
+#observacao{
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%;
+}
